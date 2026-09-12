@@ -1,0 +1,49 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile"
+    },
+    "уровень1": {
+        "id": "уровень1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDA4MDEwMjA4MDgwODA4MDgwODA4MDgwODA4MDgwODA4MDgwMTAyMDgwODA4MDgwODA4MDgwODA4MDgwODA4MDgwODAxMDIwODA4MDgwODA4MDgwODA4MDgwODA4MDgwODA4MDEwMjA4MGUwYzBjMGMwYzBjMGMwZDE1MGYxMDA4MDgwMTAyMDgwYTAzMDMwMzAzMDMwMzBiMTQxNDE0MDgwODAxMDIwODAxMDQwNTA1MDUwNTA0MDIxNDE0MTQxMDA4MDEwMjA4MDEwMjBlMGMwYzBkMDEwMjE0MTQxNDE0MDgwMTAyMDgwMTAyMDgwODA4MDgwMTAyMTQxNDE0MTEwODAxMDIwODAxMDIwODA4MDgwODAxMDIxMjEzMTEwODA4MDEwMjA5MDEwMjA4MDgwODA4MDEwMjA4MDgwODA4MDgwMTAyMDkwMTAyMDgwODA4MDgwMTAyMDgwODA4MDgwODAxMDIwOTAxMDIwODA4MDgwODAxMDIwZTBjMGMwYzA4MDEwMjA5MDEwMjA4MDgwODA4MDEwNDAzMDMwMzAzMDgwMTAyMDkwMTAyMDgwODA4MDgwNjA1MDUwNTA1MDUwODAxMDQwMzA0MDIwODA4MDgwODBlMGMwYzBjMGMwZDA4MDYwNTA1MDUwNzA4MDgwODA4MDgwODA4MDgwODA4MDIyMDAwMDAwMDAwMDAwMDAyMjAwMDAwMDAwMDAwMDAwMjIwMDAwMDAwMDAwMDAwMDIyMDIyMjIyMjIyMDIwMDAyMjAwMDAwMDAwMDAyMDAwMjIwMDAwMDAwMDAwMjAwMDIyMDAwMjIyMjAwMDIwMDAyMjAwMDAyMjAwMDAyMDAwMjIwMDAwMjIwMDAwMjAwMDIyMDAwMDIyMDAwMDIwMDAyMjAwMDAyMjAwMDAyMDAwMjIwMDAwMjIwMDAyMjIyMDIyMDAwMDIyMDAwMDAwMDAyMjAwMDAyMjAwMDAwMDAwMjAwMDAwMjIwMjIyMjIyMDIwMDAwMDIyMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.castle.tilePath4",
+            "sprites.castle.tilePath6",
+            "sprites.castle.tilePath2",
+            "sprites.castle.tilePath5",
+            "sprites.castle.tilePath8",
+            "sprites.castle.tilePath7",
+            "sprites.castle.tilePath9",
+            "sprites.castle.tileGrass1",
+            "sprites.castle.tileGrass3",
+            "sprites.castle.tilePath1",
+            "sprites.castle.tilePath3",
+            "sprites.builtin.forestTiles2",
+            "sprites.builtin.forestTiles3",
+            "sprites.builtin.forestTiles1",
+            "sprites.swamp.swampTile7",
+            "sprites.swamp.swampTile8",
+            "sprites.swamp.swampTile14",
+            "sprites.swamp.swampTile12",
+            "sprites.swamp.swampTile13",
+            "sprites.swamp.swampTile9",
+            "sprites.swamp.swampTile6",
+            "myTiles.tile1"
+        ],
+        "displayName": "уровень1"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}
