@@ -1,3 +1,14 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
+    sprites.destroy(ran, effects.trail, 2000)
+    game.gameOver(true)
+    game.setGameOverMessage(true, "КОНЕЦ ИГРЫ!")
+})
+scene.onHitWall(SpriteKind.Player, function (sprite, location) {
+    sprites.destroy(ran, effects.spray, 500)
+    game.gameOver(false)
+    game.setGameOverMessage(false, "ПОРАЖЕНИЕ")
+    game.reset()
+})
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     ran,
@@ -150,6 +161,56 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    ran,
+    [img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . 2 2 2 2 2 2 . . . . 
+        . . . . . 2 2 4 4 2 2 2 2 . . . 
+        . . . . . c 4 2 2 2 2 2 c . . . 
+        . . . . 2 c 4 2 2 2 2 2 c 2 . . 
+        . . . e 2 c 4 2 2 2 2 2 c 2 e . 
+        . . . f 2 c 4 2 2 2 2 2 c 2 f . 
+        . . . f e c 2 2 2 2 2 2 c e f . 
+        . . . f 2 c 2 b b b b 2 c 2 f . 
+        . . . e 2 2 b c c c c b 2 2 e . 
+        . . . e e b c c c c c c b e e . 
+        . . . f e 4 4 4 4 4 4 4 4 e f . 
+        . . . f e d 2 2 2 2 2 2 d e f . 
+        . . . . 2 d d 2 2 2 2 d d 2 f . 
+        . . . . f 2 d 2 2 2 2 d 2 f . . 
+        . . . . . e 2 2 2 2 2 2 e . . . 
+        `],
+    500,
+    true
+    )
+})
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    ran,
+    [img`
+        . . . . . . e e c c e e . . . . 
+        . . . . . e 2 2 2 2 2 2 e . . . 
+        . . . . 2 c 2 2 2 2 2 2 c 2 . . 
+        . . . e 2 c 4 2 2 2 2 2 c 2 e . 
+        . . . f 2 2 4 2 2 2 2 2 c 2 f . 
+        . . . f 2 2 4 2 2 2 2 2 2 2 f . 
+        . . . f 2 2 4 2 2 2 2 2 2 2 f . 
+        . . . f 2 c 2 4 4 2 2 2 c 2 f . 
+        . . . e 2 c e c c c c e c 2 e . 
+        . . . e 2 e c b b b b c e 2 e . 
+        . . . e 2 e b b b b b b e 2 e . 
+        . . . e e e e e e e e e e e e . 
+        . . . f e d e e e e e e d e f . 
+        . . . f e 2 d e e e e d 2 e f . 
+        . . . f f e e e e e e e e f f . 
+        . . . . f f . . . . . . f f . . 
+        `],
+    500,
+    true
+    )
+})
 let ran: Sprite = null
 tiles.setCurrentTilemap(tilemap`уровень1`)
 ran = sprites.create(img`
@@ -170,4 +231,8 @@ ran = sprites.create(img`
     . . . . f 2 d 2 2 2 2 d 2 f . . 
     . . . . . e 2 2 2 2 2 2 e . . . 
     `, SpriteKind.Player)
+ran.setPosition(30, 9)
 controller.moveSprite(ran, 50, 60)
+scene.cameraFollowSprite(ran)
+music.play(music.createSong(hex`0078000408020100001c00010a006400f4016400000400000000000000000000000000050000044e0004000800012908000c0001250c001000012210001400011e14001800011b1c002000031b1e22200024000129240028000222252c003000021d2434003800012038003c0001243c004000031e2229`), music.PlaybackMode.UntilDone)
+ran.setBounceOnWall(true)
